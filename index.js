@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const config = require('./config.json');
-const yt = require('ytdl-core');
 const tokens = require('./token.json');
 const client = new Discord.Client({
   disableEveryone: true
