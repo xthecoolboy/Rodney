@@ -25,7 +25,7 @@ module.exports = async client => {
 
   function setActivity() {
     // Sets Activity in a rotation
-    const Gameinfo = [`Using ${(((process.memoryUsage().heapUsed)/1024)/1024).toFixed(0)}MBs of RAM`, 'Source: http://bit.ly/rodneybotsource', 'Developer: shadowolf#9212', 'Discord: http://bit.ly/mancavediscord', 'Invite: http://bit.ly/inviterodney', `Running on ${client.guilds.size} ${pluralnonpluralservers}`, `Running for ${client.users.size} ${pluralnonpluralusers}`, `Use ${config.prefix}help`];
+    const Gameinfo = ['Developer: 𝕯𝖗𝖆𝖌𝖔𝖓𝖇𝖔𝖞#6241', 'Discord: https://discord.gg/dwVpK8E', `Running on ${client.guilds.size} ${pluralnonpluralservers}`, `Running for ${client.users.size} ${pluralnonpluralusers}`, `Use ${config.prefix}help`];
     var info = Gameinfo[Math.floor(Math.random() * Gameinfo.length)];
 
     client.user.setActivity(info);
