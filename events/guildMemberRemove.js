@@ -7,7 +7,7 @@ module.exports = async member => {
   if (!auditlogchannel) return
 
   let embed = new Discord.RichEmbed()
-    .setTitle(`${member.user.username} has left the guild.`)
+    .setTitle(`${member.user.username} has left the discord`)
     .setColor(config.red)
     .addField('Tag', member, true)
   auditlogchannel.send(embed);
