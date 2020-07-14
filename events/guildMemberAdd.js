@@ -15,7 +15,7 @@ module.exports = async member => {
   console.log(chalk.yellow(`[${member.guild}]`) + ` ${member.user.username} has joined the ${member.guild} Guild.`);
 
   // This option is only useful if you run the bot locally, yourself.
-  if (config.guildid == '732659550028562493') {
+  if (config.guildid == '732660619232411741') {
     if (!config.userchannel) return;
     member.guild.channels.get(config.userchannel).setName(`Total Users: ${member.guild.memberCount}`);
   }
