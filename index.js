@@ -50,9 +50,9 @@ client.on('message', (message) => {
         message.channel.sendMessage("Well I'm a bot created by Server Owner, 316thebrains for the purpose of watching over his server whenever he goes AFK. So dont get any ideas.")
     }
     else if (message.content.toLowerCase() == "i hate you overseer"){
-        message.channel.sendMessage(`Awwww, Thanks ${message.author}`)
+        message.channel.sendMessage(`Awwww, Thanks ${message.author}`);
     }
-  
+  };
   
   
   
