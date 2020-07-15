@@ -52,7 +52,6 @@ client.on('message', (message) => {
     else if (message.content.toLowerCase() == "i hate you overseer"){
         message.channel.sendMessage(`Awwww, Thanks ${message.author}`);
     }
-  }
   
   
   
