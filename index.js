@@ -71,26 +71,6 @@ client.on('message', (message) => {
   };
 });
 
- if (!args.length) 
-    {
-        data.push(`Here\'s a list of all my commands:\n \n`)
-        data.push(commands.map(command => command.name).join(`\n`))
-        data.push(`\n \nYou can send \`${prefix}help [command name]\` to get info on a specific command!`)
-        var Embed = new Discord.MessageEmbed()
-        .setDescription (`${data}`)
-
-        return message.channel.send(Embed);
-    }
-    const name = args[0].toLowerCase();
-    const command = commands.get(name) || commands.find(c => c.aliases && c.aliases.includes(name));
-    
-    if (!command) {
-        return message.reply('that\'s not a valid command!');
-    }
-    
-    data.push(`**Name:** ${command.name}`);
-    
-    if (command.aliases) data.push(`**Aliases:**)
 
 client.login(process.env.BOT_TOKEN);
 
