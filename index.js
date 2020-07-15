@@ -72,6 +72,9 @@ client.on('message', (message) => {
 });
 
 
+else if (message.content === `${prefix}server`) {
+	message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
+}
 
 
 client.login(process.env.BOT_TOKEN);
