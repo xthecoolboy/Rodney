@@ -37,20 +37,6 @@ client.on('message', (message) => {
   if (!cmd.startsWith(prefix)) return;
   let commandfile = client.commands.get(cmd.slice(prefix.length));
   if (commandfile) commandfile.run(client, message, args);
-
-  
-  
-  
-  
-  
-  bot.on("message", message => {
-
-    if (message.content == "Who's Overseer?"){
-        //message.reply("pong")
-        message.channel.sendMessage("Well I'm a bot created by Server Owner, 316thebrains for the purpose of watching over his server whenever he goes AFK. So dont get any ideas.")
-    }
-    else if (message.content.toLowerCase() == "i hate you overseer"){
-        message.channel.sendMessage(`Awwww, Thanks ${message.author}`);
   
   
   
